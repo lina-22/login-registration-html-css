@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  /* background-image: url(/967539.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Form-box {
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  backdrop-filter: blur(40px);
+  color: rgb(13, 10, 10);
+  font-size: 16px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.6s ease, height 0.2s ease-in-out;
+  /* position: absolute; */
+  /*👉top: 50%;
+  left: 50%;👈*/
+  /* transform: translate(-50%, -50%); */
+  box-shadow: 0px 20px 30px 0px rgba(162, 212, 10, 0.1),
+    0px 4px 4px 0px rgba(186, 221, 14, 0.15);
+}
+.Form-box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.Form-box .Register-form {
+  transform: translateX(-100%);
+}
+.input-box {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 40px 0px;
+}
+.Register-form .input-box {
+  margin: 18px 0px;
+}
+
+.input-box input {
+  width: 86%;
+  position: absolute;
+  color: rgb(37, 24, 24);
+  font-size: 16px;
+  border: 1px solid rgba(186, 221, 14, 0.5);
+  background: none;
+  outline: none;
+  padding: 8px 0 8px 10px;
+}
+.input-box input:focus {
+  border: 1px solid rgba(186, 221, 14, 1);
+}
+.input-box label {
+  transition: 0.4s;
+  padding: 8px 0 0px 10px;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  transform: translateY(-30px);
+}
+.input-box i {
+  font-size: 25px;
+  padding: 5px;
+}
+.checkbox {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.Register-form .checkbox {
+  display: unset;
+}
+.Login-form .input-box {
+  margin: 20px 0;
+}
+.submit-btn {
+  width: 80%;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 20px 0px;
+  border: none;
+  font-size: 14px;
+  transition: 0.5s ease-in-out;
+}
+.submit-btn:hover {
+  background: #ebdb03;
+  color: #240808;
+}
+.Form-box h5,
+.checkbox label,
+.checkbox input {
+  cursor: pointer;
+}
+.change-form {
+  height: 500px;
+}
+.change-form .Login-form {
+  transform: translateX(100%);
+}
+.change-form .Register-form {
+  transform: translateX(0%);
+}
